@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4C8E5289BA4A32EDC76CC6A /* Pods_FingerMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F14643C4085D91867478A2F /* Pods_FingerMath.framework */; };
+		BF20F5351E78B1820084EF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF20F5341E78B1820084EF19 /* AppDelegate.swift */; };
+		BF20F5371E78B1820084EF19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF20F5361E78B1820084EF19 /* ViewController.swift */; };
+		BF20F53A1E78B1820084EF19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF20F5381E78B1820084EF19 /* Main.storyboard */; };
+		BF20F53C1E78B1820084EF19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF20F53B1E78B1820084EF19 /* Assets.xcassets */; };
+		BF20F53F1E78B1820084EF19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF20F53D1E78B1820084EF19 /* LaunchScreen.storyboard */; };
+		BFABAE551E79DD5E00D92FBE /* Media.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BFABAE541E79DD5E00D92FBE /* Media.scnassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F14643C4085D91867478A2F /* Pods_FingerMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FingerMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2A9E27FDEC45CD593A0FFB /* Pods-FingerMath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FingerMath.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FingerMath/Pods-FingerMath.debug.xcconfig"; sourceTree = "<group>"; };
+		AFE34043AA2CC093910CF71D /* Pods-FingerMath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FingerMath.release.xcconfig"; path = "Pods/Target Support Files/Pods-FingerMath/Pods-FingerMath.release.xcconfig"; sourceTree = "<group>"; };
+		BF20F5311E78B1820084EF19 /* FingerMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF20F5341E78B1820084EF19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF20F5361E78B1820084EF19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF20F5391E78B1820084EF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF20F53B1E78B1820084EF19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF20F53E1E78B1820084EF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF20F5401E78B1820084EF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFABAE541E79DD5E00D92FBE /* Media.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Media.scnassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF20F52E1E78B1820084EF19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C8E5289BA4A32EDC76CC6A /* Pods_FingerMath.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF20F5281E78B1820084EF19 = {
+			isa = PBXGroup;
+			children = (
+				BF20F5331E78B1820084EF19 /* FingerMath */,
+				BF20F5321E78B1820084EF19 /* Products */,
+				FEDCA80004E7FE5713699EAD /* Pods */,
+				CB43759F014AFFD4E578C287 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF20F5321E78B1820084EF19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF20F5311E78B1820084EF19 /* FingerMath.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF20F5331E78B1820084EF19 /* FingerMath */ = {
+			isa = PBXGroup;
+			children = (
+				BFABAE541E79DD5E00D92FBE /* Media.scnassets */,
+				BF20F5341E78B1820084EF19 /* AppDelegate.swift */,
+				BF20F5361E78B1820084EF19 /* ViewController.swift */,
+				BF20F5381E78B1820084EF19 /* Main.storyboard */,
+				BF20F53B1E78B1820084EF19 /* Assets.xcassets */,
+				BF20F53D1E78B1820084EF19 /* LaunchScreen.storyboard */,
+				BF20F5401E78B1820084EF19 /* Info.plist */,
+			);
+			path = FingerMath;
+			sourceTree = "<group>";
+		};
+		CB43759F014AFFD4E578C287 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F14643C4085D91867478A2F /* Pods_FingerMath.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEDCA80004E7FE5713699EAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C2A9E27FDEC45CD593A0FFB /* Pods-FingerMath.debug.xcconfig */,
+				AFE34043AA2CC093910CF71D /* Pods-FingerMath.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF20F5301E78B1820084EF19 /* FingerMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF20F5431E78B1820084EF19 /* Build configuration list for PBXNativeTarget "FingerMath" */;
+			buildPhases = (
+				A415A7A5EF99E9483C1C2962 /* [CP] Check Pods Manifest.lock */,
+				BF20F52D1E78B1820084EF19 /* Sources */,
+				BF20F52E1E78B1820084EF19 /* Frameworks */,
+				BF20F52F1E78B1820084EF19 /* Resources */,
+				5105FF58B182C090FE35B7BC /* [CP] Embed Pods Frameworks */,
+				FBC53167426BAB5936B05832 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FingerMath;
+			productName = FingerMath;
+			productReference = BF20F5311E78B1820084EF19 /* FingerMath.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF20F5291E78B1820084EF19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = zackzhu;
+				TargetAttributes = {
+					BF20F5301E78B1820084EF19 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HZ32KGWJ68;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BF20F52C1E78B1820084EF19 /* Build configuration list for PBXProject "FingerMath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF20F5281E78B1820084EF19;
+			productRefGroup = BF20F5321E78B1820084EF19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF20F5301E78B1820084EF19 /* FingerMath */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF20F52F1E78B1820084EF19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF20F53F1E78B1820084EF19 /* LaunchScreen.storyboard in Resources */,
+				BF20F53C1E78B1820084EF19 /* Assets.xcassets in Resources */,
+				BFABAE551E79DD5E00D92FBE /* Media.scnassets in Resources */,
+				BF20F53A1E78B1820084EF19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5105FF58B182C090FE35B7BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FingerMath/Pods-FingerMath-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A415A7A5EF99E9483C1C2962 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC53167426BAB5936B05832 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FingerMath/Pods-FingerMath-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF20F52D1E78B1820084EF19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF20F5371E78B1820084EF19 /* ViewController.swift in Sources */,
+				BF20F5351E78B1820084EF19 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF20F5381E78B1820084EF19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF20F5391E78B1820084EF19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF20F53D1E78B1820084EF19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF20F53E1E78B1820084EF19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF20F5411E78B1820084EF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF20F5421E78B1820084EF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF20F5441E78B1820084EF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C2A9E27FDEC45CD593A0FFB /* Pods-FingerMath.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HZ32KGWJ68;
+				INFOPLIST_FILE = FingerMath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zackzhu.FingerMath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BF20F5451E78B1820084EF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFE34043AA2CC093910CF71D /* Pods-FingerMath.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HZ32KGWJ68;
+				INFOPLIST_FILE = FingerMath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zackzhu.FingerMath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF20F52C1E78B1820084EF19 /* Build configuration list for PBXProject "FingerMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF20F5411E78B1820084EF19 /* Debug */,
+				BF20F5421E78B1820084EF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF20F5431E78B1820084EF19 /* Build configuration list for PBXNativeTarget "FingerMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF20F5441E78B1820084EF19 /* Debug */,
+				BF20F5451E78B1820084EF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF20F5291E78B1820084EF19 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_FingerMath {
+  umbrella header "Pods-FingerMath-umbrella.h"
+
+  export *
+  module * { export * }
+}
