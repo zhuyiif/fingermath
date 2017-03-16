@@ -16,6 +16,16 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     let tableView:UITableView = UITableView()
     
+    var lessonArray:[String] = [String]()
+    
+    func setupLesson(){
+        self.lessonArray.append("Introduction")
+        self.lessonArray.append("From 1 to 5")
+        self.lessonArray.append("From 5 to 10")
+        self.lessonArray.append("From 10 to 20")
+        
+    }
+    
     func setupTableView(){
         self.view.addSubview(tableView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: ID);
@@ -33,6 +43,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.title = "Finger Math"
+        self.setupLesson()
         
         self.setupTableView()
     }
@@ -44,15 +55,20 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 2
+        return self.lessonArray.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell {
         let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: ID, for: indexPath)
         
-        cell.textLabel?.text = "fake data " + "\(indexPath.row)"
+        cell.textLabel?.text = "\(lessonArray[indexPath.row])"
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let lessCtrl = LessonController()
+        self.navigationController?.pushViewController(lessCtrl, animated: true)
     }
 
 }

@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 target 'FingerMath' do
@@ -6,4 +6,7 @@ target 'FingerMath' do
  pod 'SCLAlertView'
  pod 'Material', '~> 2.0'
  pod 'SnapKit', '~> 3.2.0'
+ pod 'YouTubePlayer'
+ pod 'Nuke', '~> 5.0'
+ pod 'AWSS3'
 end

@@ -1,18 +1,26 @@
 PODS:
+  - AWSCore (2.5.1)
+  - AWSS3 (2.5.1):
+    - AWSCore (= 2.5.1)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
   - Material (2.4.19):
     - Material/Core (= 2.4.19)
   - Material/Core (2.4.19)
+  - Nuke (5.1)
   - SCLAlertView (0.7.0)
   - SnapKit (3.2.0)
+  - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
+  - AWSS3
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - Material (~> 2.0)
+  - Nuke (~> 5.0)
   - SCLAlertView
   - SnapKit (~> 3.2.0)
+  - YouTubePlayer
 
 EXTERNAL SOURCES:
   ChameleonFramework:
@@ -24,11 +32,15 @@ CHECKOUT OPTIONS:
     :git: https://github.com/ViccAlexander/Chameleon.git
 
 SPEC CHECKSUMS:
+  AWSCore: 71ca929a42c68ca7d645fcfa1e41ea0ff792a275
+  AWSS3: d45eaab964b731853bd20c681c0d6f0a99408305
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Material: 67b52869f68ab95757e14801ffba0a52a4f19c31
+  Nuke: 8ab71e77f6a54ff5fb697f93537c35f419bb01f7
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: b4c734d44356e09781456a4ebfec458cd984e8e4
+PODFILE CHECKSUM: dbc1b643df473cdb7eadacd053a0a3fa5ded10c4
 
 COCOAPODS: 1.2.0
