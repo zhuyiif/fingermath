@@ -13,32 +13,62 @@ import MediaPlayer
 import YouTubePlayer
 import Nuke
 import AWSS3
+import Material
+import ChameleonFramework
 
 class LessonController: UIViewController {
-    var avPlayer:AVPlayer!
-    
+
     var videoPlayer: YouTubePlayerView!
-    
     var imageView: UIImageView!
+    
+    var firstLabel:UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.flatWhite
+    
+        self.edgesForExtendedLayout = []
         
-//        videoPlayer = YouTubePlayerView(frame: self.view.bounds)
-//        
-//        let myVideoURL = NSURL(string: "https://www.youtube.com/watch?v=q3irC0WKbcc&list=PL5mUgUAASqxayABfMm7BTO5S198E6RyAd")
-//        videoPlayer.loadVideoURL(myVideoURL! as URL)
+        videoPlayer = YouTubePlayerView()
+        self.view.addSubview(videoPlayer)
+        videoPlayer.snp.makeConstraints { (make) -> Void in
+            make.height.equalTo(self.view.frame.height/4)
+            make.width.equalTo(self.view.frame.width)
+            make.left.equalTo(0)
+            make.top.equalTo(0)
+        }
         
-//        let videoURL = NSURL(string: "https://www.youtube.com/watch?v=q3irC0WKbcc&list=PL5mUgUAASqxayABfMm7BTO5S198E6RyAd")
-//        avPlayer = AVPlayer(url: videoURL! as URL)
-//        let playerLayer = AVPlayerLayer(player: avPlayer)
-//        playerLayer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width * 3.0 / 4.0)
-//        self.view.layer.addSublayer(playerLayer)
-//        avPlayer.play()
+        let myVideoURL = NSURL(string: "https://youtu.be/iRIHZ73PC8U")
+        videoPlayer.loadVideoURL(myVideoURL! as URL)
         
         
-        imageView = UIImageView(frame: self.view.bounds)
+
+        firstLabel = UILabel()
+        self.view.addSubview(firstLabel)
+        firstLabel.text = "Left hand is 10, Right hand is 1"
+        
+        firstLabel.snp.makeConstraints { (make) -> Void in
+            make.height.equalTo(50)
+            make.width.equalTo(self.view.frame.width)
+            make.left.equalTo(12)
+            make.top.equalTo(self.videoPlayer.snp.bottom).offset(12)
+            
+            
+        }
+        
+        
+        
+        
+        imageView = UIImageView()
         self.view .addSubview(imageView)
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        imageView.snp.makeConstraints { (make) in
+            make.left.equalTo(self.firstLabel).offset(0)
+            make.top.equalTo(self.firstLabel.snp.bottom).offset(12)
+            make.right.equalTo(self.view).offset(0)
+            make.height.equalTo(self.view.frame.height/4)
+            
+        }
         
         let url = URL(string: "https://raw.githubusercontent.com/zhuyiif/zhuyiif.github.io/master/img/finger.jpeg")
         Nuke.loadImage(with: url!, into: imageView)
