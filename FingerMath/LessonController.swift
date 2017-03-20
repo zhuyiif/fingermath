@@ -23,14 +23,25 @@ class LessonController: UIViewController {
     
     var firstLabel:UILabel!
     
+    var scrollView:UIScrollView!
+    
+    var fingerImage:FingerNumberView!
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView = UIScrollView(frame: self.view.bounds)
+        self.scrollView.contentSize = CGSize(width: self.view.bounds.width, height: self.view.bounds.height*2)
+        self.view.addSubview(self.scrollView)
+        
         self.view.backgroundColor = UIColor.flatWhite
     
         self.edgesForExtendedLayout = []
         
         videoPlayer = YouTubePlayerView()
-        self.view.addSubview(videoPlayer)
+        self.scrollView.addSubview(videoPlayer)
         videoPlayer.snp.makeConstraints { (make) -> Void in
             make.height.equalTo(self.view.frame.height/4)
             make.width.equalTo(self.view.frame.width)
@@ -41,11 +52,10 @@ class LessonController: UIViewController {
         let myVideoURL = NSURL(string: "https://youtu.be/iRIHZ73PC8U")
         videoPlayer.loadVideoURL(myVideoURL! as URL)
         
-        
-
         firstLabel = UILabel()
-        self.view.addSubview(firstLabel)
-        firstLabel.text = "Left hand is 10, Right hand is 1"
+        self.scrollView.addSubview(firstLabel)
+        firstLabel.text = "Left hand's finger is 10,Left thumb is 50, Right hand's finger is 1, right thumb is 5"
+        firstLabel.numberOfLines = 0;
         
         firstLabel.snp.makeConstraints { (make) -> Void in
             make.height.equalTo(50)
@@ -60,7 +70,7 @@ class LessonController: UIViewController {
         
         
         imageView = UIImageView()
-        self.view .addSubview(imageView)
+        self.scrollView.addSubview(imageView)
         imageView.contentMode = UIViewContentMode.scaleAspectFit
         imageView.snp.makeConstraints { (make) in
             make.left.equalTo(self.firstLabel).offset(0)
@@ -72,6 +82,20 @@ class LessonController: UIViewController {
         
         let url = URL(string: "https://raw.githubusercontent.com/zhuyiif/zhuyiif.github.io/master/img/finger.jpeg")
         Nuke.loadImage(with: url!, into: imageView)
+        
+        // add hand pic
+        
+        fingerImage = FingerNumberView()
+        self.scrollView.addSubview(fingerImage)
+        fingerImage.snp.makeConstraints { (make) in
+            make.left.equalTo(self.view)
+            make.top.equalTo(self.imageView.snp.bottom).offset(12)
+            make.right.equalTo(self.view)
+            make.height.equalTo(self.view.frame.height/3.5)
+            
+        }
+        
+        
         
         
         

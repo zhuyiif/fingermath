@@ -20,8 +20,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     func setupLesson(){
         self.lessonArray.append("Introduction")
-        self.lessonArray.append("From 1 to 5")
-        self.lessonArray.append("From 5 to 10")
+        self.lessonArray.append("Counting From 1 to 10")
+        self.lessonArray.append("Counting From 10 to 100")
         self.lessonArray.append("From 10 to 20")
         
     }
