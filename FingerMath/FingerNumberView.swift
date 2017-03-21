@@ -171,12 +171,11 @@ class FingerNumberView: UIView {
         self.addSubview(leftLabel)
         self.addSubview(rightLabel)
         
-        let height = UIScreen.main.bounds.height
-        let width = UIScreen.main.bounds.width
+  
         leftImageView.snp.makeConstraints { (make) -> Void in
-            make.height.equalTo(height*3.5/10)
-            make.width.equalTo(width/3)
-            make.left.equalTo(width/6)
+            make.height.equalTo(self.bounds.height*3.5/10)
+            make.width.equalTo(self.bounds.width/3)
+            make.left.equalTo(self.bounds.height/6)
             make.top.equalTo(self)
         }
         
