@@ -16,6 +16,13 @@ import AWSS3
 import Material
 import ChameleonFramework
 
+class FingerScollView: UIScrollView {
+    
+    override func touchesShouldCancel(in view: UIView) -> Bool {
+        return false
+    }
+}
+
 class LessonController: UIViewController {
 
     var videoPlayer: YouTubePlayerView!
@@ -26,6 +33,8 @@ class LessonController: UIViewController {
     var scrollView:UIScrollView!
     
     var fingerImage:FingerNumberView!
+    
+    var fingerQuestions:FingerNumberQuestions!
     
    
     
@@ -84,18 +93,32 @@ class LessonController: UIViewController {
         Nuke.loadImage(with: url!, into: imageView)
         
         // add hand pic
-        
-        fingerImage = FingerNumberView()
+//        
+        fingerImage = FingerNumberView(frame: CGRect.zero, height:Double( self.view.bounds.height/3.5))
         self.scrollView.addSubview(fingerImage)
         fingerImage.snp.makeConstraints { (make) in
             make.left.equalTo(self.view)
             make.top.equalTo(self.imageView.snp.bottom).offset(12)
             make.right.equalTo(self.view)
-            make.height.equalTo(self.view.frame.height/3.5)
+            make.height.equalTo(Double(self.view.bounds.height/3.5))
             
+      
         }
         
-        
+     
+     
+        fingerQuestions = FingerNumberQuestions(frame:CGRect.zero,  height: Double(self.view.bounds.height/3.5))
+
+        self.scrollView.addSubview(fingerQuestions)
+    
+        fingerQuestions.snp.makeConstraints { (make) in
+            make.left.equalTo(self.view)
+            make.top.equalTo(self.fingerImage.snp.bottom).offset(12)
+            make.right.equalTo(self.view)
+            make.height.equalTo(Double(self.view.bounds.height/3.5))
+            
+            
+        }
         
         
         
