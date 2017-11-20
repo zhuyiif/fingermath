@@ -42,7 +42,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.title = "Finger Math"
+        self.title = "Finger Math"
         self.setupLesson()
         
         self.setupTableView()
